@@ -252,3 +252,30 @@ console.log(a);
 // import newFunction from './Basic.js';
 
 // console.log(newFunction());
+
+let ar = [0,1,2,3,4,5,6,7,8,9];
+ar.push(10,11,12); // Add end
+ar.pop(); // Remove end  
+ar.unshift(-3,-3,-2,-1); // add first
+ar.shift(); // delet first
+
+// Add and Remove element spacific position using Index
+
+// ar.splice (index, number of element remove, value we want to insert)
+
+ar.splice(5,3); // Remove 3 element from 5 index
+console.log('Remove ' + ar); 
+
+ar.splice(5,0,2,3,4); // Add 2,3 and 4 index of 5
+console.log('Insert ' + ar); 
+
+console.log('Array Length ' + ar.length);  
+
+// 2D Array in JS
+
+let ab = [];
+ab[0] = [1,2,3,4,5];
+ab[1] = [6,7,8,9,10];
+
+console.log('2D Array elemant :' + ab[0][2],ab[1][2],ab[0][3],ab[1][3]);
+console.log('2D Array :' + ab);
