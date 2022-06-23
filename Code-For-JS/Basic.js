@@ -1,6 +1,5 @@
 // Variables and Function  
-
-const newFunction = () =>  {
+ const newFunction = () =>  {
     var a = 10;
     var b = 29;
     var c = a+b;
@@ -11,10 +10,11 @@ console.log(newFunction());
 
 // Object 
 
-var myObj ={
-    myName : 'Anish',
-    myAge : '20'
-}
+ const myObj = {
+           myName : 'Anish',
+           myAge : '20'
+} 
+
 console.log(myObj.myName);
 
 // String 
