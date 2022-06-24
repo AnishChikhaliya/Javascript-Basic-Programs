@@ -299,14 +299,14 @@ console.log(mt.fill("wow",1,2)); //array.fill(Valu, Start, End)
 
 // array.find(function(currentValue, index, arr),thisValue)
 
-let text = " ";
+let o = " ";
 const fruits = ["apple", "orange", "cherry"];
 
 const myIndex = (index,item) => {
-    text += index + ':' + item + ' ';
+    o += index + ':' + item + ' ';
 }
 fruits.forEach(myIndex);
-console.log(text);
+console.log(o);
 
 // Array.from(object, mapFunction, thisValue)
 
@@ -317,7 +317,7 @@ console.log(myArr);
 
 // array.includes(element, start)
 
-console.log( myArr.includes("C",2));
+console.log( myArr.includes("F",4));  // method returns true if an array contains a specified value else returns false
 
 // array.indexOf(item, start)
 
@@ -325,7 +325,7 @@ console.log( myArr.indexOf("C")); // return index
 
 // array.join(separator)
 
-console.log(myArr.join(' & ')); // join are return a array as a string 
+console.log(myArr.join(' & ')); // join evry elemant in array and  return a array as a string 
 
 // array.keys()
 
@@ -356,4 +356,13 @@ for (const v of num){
 console.log(f);
 
 // array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
+console.log(f.reduce(multi));
+
+// array.copyWithin(target index , start, end)
+
+let copyArray = [1, 2, 3, 4, 5, 6];
+
+console.log(copyArray.copyWithin(0, 3, 4)); 
+
 
