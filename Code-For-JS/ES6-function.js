@@ -279,3 +279,81 @@ ab[1] = [6,7,8,9,10];
 
 console.log('2D Array elemant :' + ab[0][2],ab[1][2],ab[0][3],ab[1][3]);
 console.log('2D Array :' + ab);
+
+//               /************** JS Array Method  ******************/
+
+const mt = [20,40,15,18,22];
+
+const ChekAge = (ag) => {
+      return ag > 18;
+}
+console.log(mt.every(ChekAge)); // Chek every elemant in array
+
+console.log(mt.filter(ChekAge)); // filter the elemant and return array
+
+console.log(ab.concat(arr));
+
+console.log(mt.fill("wow",1,2)); //array.fill(Valu, Start, End)
+
+// array.findIndex(function(currentValue, index, arr), thisValue)
+
+// array.find(function(currentValue, index, arr),thisValue)
+
+let text = " ";
+const fruits = ["apple", "orange", "cherry"];
+
+const myIndex = (index,item) => {
+    text += index + ':' + item + ' ';
+}
+fruits.forEach(myIndex);
+console.log(text);
+
+// Array.from(object, mapFunction, thisValue)
+
+let t = "ABCDEFC"
+const myArr = Array.from(t);
+
+console.log(myArr);
+
+// array.includes(element, start)
+
+console.log( myArr.includes("C",2));
+
+// array.indexOf(item, start)
+
+console.log( myArr.indexOf("C")); // return index
+
+// array.join(separator)
+
+console.log(myArr.join(' & ')); // join are return a array as a string 
+
+// array.keys()
+
+console.log(myArr.keys());
+
+// array.lastIndexOf(item, start)
+
+console.log(myArr.lastIndexOf('C')); 
+
+// array.length
+
+// array.map(function(currentValue, index, arr), thisValue)
+
+const num = [10,20,30,40,50];
+
+const multi = (n) => {
+      return n*10;
+}
+
+console.log(num.map(multi));
+
+// Of 
+
+let f = [];
+for (const v of num){
+    f.push(v/10);
+}
+console.log(f);
+
+// array.reduce(function(total, currentValue, currentIndex, arr), initialValue)
+
